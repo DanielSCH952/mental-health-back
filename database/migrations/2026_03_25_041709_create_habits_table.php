@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('type');
             $table->string('goal_type');
-            $table->timestamp('created_at');
+            $table->timestamp('created_at')->nullable();
         });
     }
 

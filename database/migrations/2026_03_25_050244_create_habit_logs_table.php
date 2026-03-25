@@ -18,7 +18,7 @@ return new class extends Migration
             $table->boolean('consumed')->default(false);
             $table->integer('quantity')->nullable();
             $table->text('note')->nullable();
-            $table->timestamp('created_at');
+            $table->timestamp('created_at')->nullable();
             $table->unique(['habit_id', 'date']);
         });
     }
